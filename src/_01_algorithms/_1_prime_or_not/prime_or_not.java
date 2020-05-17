@@ -7,17 +7,18 @@ public class prime_or_not {
 		
 		String prime = JOptionPane.showInputDialog("Pick a number under 100...");
 		
-		for(int i=0; i<100; i++) {
-			if() {
-				JOptionPane.showMessageDialog(null, "It is a prime number");
+		int number = Integer.parseInt(prime);
+		
+		for (int i = 2; i < number; i++) {
+			if(number % i == 0) {
+				JOptionPane.showMessageDialog(null, "The number is not prime");
+				System.exit(0);
 			}
-		else {
-		JOptionPane.showMessageDialog(null, "It is not a prime number");	
 		}
-		}
+			JOptionPane.showMessageDialog(null, "The number is prime");
 		
-		
-		
-		
+	
+			
+	
 	}
 }
